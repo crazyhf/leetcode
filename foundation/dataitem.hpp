@@ -27,7 +27,14 @@ namespace foundation
         FLOAT, DOUBLE, LONGDOUBLE
     };
     
-    template <typename T> class HFNumberTypeObj {
+    bool HFNumberTypeIsUnSigned(HFNumberType type);
+    
+    bool HFNumberTypeIsSigned(HFNumberType type);
+
+    bool HFNumberTypeIsFloat(HFNumberType type);
+    
+    template <typename T>
+    class HFNumberTypeObj {
     public:
         static HFNumberType type();
         static std::string name();
@@ -55,8 +62,22 @@ namespace foundation
             long double         longDoubleVal;
         } _number;
         
+        template <typename T> T value() const;
+        
     public:
-        HFNumberType type() { return _type; }
+        HFNumberType type() const { return _type; }
+        
+        bool operator>(const HFNumberItem &item) const;
+        
+        bool operator>=(const HFNumberItem &item) const;
+        
+        bool operator<(const HFNumberItem &item) const;
+        
+        bool operator<=(const HFNumberItem &item) const;
+        
+        bool operator==(const HFNumberItem &item) const;
+        
+        HFComparison compare(const HFNumberItem &item) const;
         
 #define HFNUMBERITEM_FUNC_DECLARE(_ret_type_, _ret_field_) \
         HFNumberItem(_ret_type_ _ret_field_); \
@@ -78,7 +99,9 @@ namespace foundation
         HFNUMBERITEM_FUNC_DECLARE(double, doubleVal);
         HFNUMBERITEM_FUNC_DECLARE(long double, longDoubleVal);
 #undef HFNUMBERITEM_FUNC_DECLARE
-        //bool value() { assert(BOOL == _type && ""); return _number.boolVal; }
+        
+        std::string stringVal() const;
+        operator std::string() const;
     };
     
     template <typename T>
@@ -94,9 +117,15 @@ namespace foundation
         
         const T &value() const { return _value; }
         
+        std::string stringVal() const { return ""; }
+        
         bool operator>(const HFDataItem<T> &) const { return true; }
         
+        bool operator>=(const HFDataItem<T> &) const { return true; }
+        
         bool operator<(const HFDataItem<T> &) const { return true; }
+        
+        bool operator<=(const HFDataItem<T> &) const { return true; }
         
         bool operator==(const HFDataItem<T> &) const { return true; }
     };

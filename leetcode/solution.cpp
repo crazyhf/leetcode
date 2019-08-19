@@ -16,22 +16,10 @@ using namespace leetcode;
 
 string HFSolution::intVec2Str(const vector<int> &intVec)
 {
-    stringbuf buf;
-    ostream out(&buf);
-    
-    out << "[";
-    for (size_t idx = 0; idx < intVec.size(); idx++) {
-        if (0 != idx) {
-            out << ", " << intVec[idx];
-        } else {
-            out << intVec[idx];
-        }
-    }
-    out << "]";
-    return buf.str();
+    return foundation::intVec2Str(intVec);
 }
 
 void HFSolution::printIntVec(const vector<int> &intVec)
 {
-    cout << intVec2Str(intVec);
+    cout << foundation::intVec2Str(intVec);
 }

@@ -10,6 +10,8 @@
 
 #include "dataitem.hpp"
 
+#include "sortalgorithmtest.hpp"
+
 #include "towsum.hpp"
 #include "numtrees.hpp"
 #include "mergeary.hpp"
@@ -18,6 +20,8 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+        algorithm::sort::test::HFSortAlgorithmTest().testQuickSort();
+        
         leetcode::HFTwoSumSolution().testTwoSum();
         leetcode::HFNumTreesSolution().testNumTrees();
         leetcode::HFMergeArySolution().testMerge();

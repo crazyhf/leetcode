@@ -8,11 +8,30 @@
 
 #include "dataitem.hpp"
 
+#include <sstream>
+
 using namespace std;
 
 
 namespace foundation
 {
+    bool HFNumberTypeIsUnSigned(HFNumberType type)
+    {
+        return (BOOL == type || UCHAR == type || USHORT == type
+                || UINT == type || ULONG == type || ULONGLONG == type);
+    }
+    
+    bool HFNumberTypeIsSigned(HFNumberType type)
+    {
+        return (CHAR == type || SHORT == type
+                || INT == type || LONG == type || LONGLONG == type);
+    }
+    
+    bool HFNumberTypeIsFloat(HFNumberType type)
+    {
+        return (FLOAT == type || DOUBLE == type || LONGDOUBLE == type);
+    }
+    
 #define HFNUMBERTYPEOBJ_SPECIALIZE(_type_, _number_type_) \
         template<> \
         HFNumberType HFNumberTypeObj<_type_>::type() { return _number_type_; } \
@@ -36,11 +55,91 @@ namespace foundation
 #undef HFNUMBERTYPEOBJ_SPECIALIZE
     
     
+    template <typename T>
+    HFComparison compareWithNumberItem(T value, const HFNumberItem &item)
+    {
+        if (HFNumberTypeIsSigned(item.type())) {
+            long long v = item.longLongVal();
+            if (value > v) { return BIGGER; }
+            else if (value == v) { return EQUAL; }
+            else { return LESSER; }
+        } else if (HFNumberTypeIsUnSigned(item.type())) {
+            unsigned long long v = item.uLongLongVal();
+            if (value > v) { return BIGGER; }
+            else if (value == v) { return EQUAL; }
+            else { return LESSER; }
+        } else {
+            long double v = item.longDoubleVal();
+            if (value > v) { return BIGGER; }
+            else if (value == v) { return EQUAL; }
+            else { return LESSER; }
+        }
+    }
+    
+    
+    bool HFNumberItem::operator>(const HFNumberItem &item) const
+    {
+        return (BIGGER == compare(item));
+    }
+    
+    bool HFNumberItem::operator>=(const HFNumberItem &item) const
+    {
+        return (LESSER != compare(item));
+    }
+    
+    bool HFNumberItem::operator<(const HFNumberItem &item) const
+    {
+        return (LESSER == compare(item));
+    }
+    
+    bool HFNumberItem::operator<=(const HFNumberItem &item) const
+    {
+        return (BIGGER != compare(item));
+    }
+    
+    bool HFNumberItem::operator==(const HFNumberItem &item) const
+    {
+        return (EQUAL == compare(item));
+    }
+    
+    HFComparison HFNumberItem::compare(const HFNumberItem &item) const
+    {
+        if (HFNumberTypeIsSigned(_type)) {
+            return compareWithNumberItem(longLongVal(), item);
+        } else if (HFNumberTypeIsUnSigned(_type)) {
+            return compareWithNumberItem(uLongLongVal(), item);
+        } else {
+            return compareWithNumberItem(longDoubleVal(), item);
+        }
+    }
+    
+    template <typename T>
+    T HFNumberItem::value() const
+    {
+        switch (_type) {
+            case BOOL: return _number.boolVal;
+            case CHAR: return _number.charVal;
+            case UCHAR: return _number.uCharVal;
+            case SHORT: return _number.shortVal;
+            case USHORT: return _number.uShortVal;
+            case INT: return _number.intVal;
+            case UINT: return _number.uIntVal;
+            case LONG: return _number.longVal;
+            case ULONG: return _number.uLongVal;
+            case LONGLONG: return _number.longLongVal;
+            case ULONGLONG: return _number.uLongLongVal;
+            case FLOAT: return _number.floatVal;
+            case DOUBLE: return _number.doubleVal;
+            case LONGDOUBLE: return _number.longDoubleVal;
+            default: return 0;
+        }
+    }
+    
 #define HFNUMBERITEM_FUNC_DEFINE(_ret_type_, _ret_field_) \
         HFNumberItem::HFNumberItem(_ret_type_ _ret_field_) \
                      : _type(HFNumberTypeObj<_ret_type_>::type()), \
                        _number({._ret_field_=_ret_field_}) {} \
-        _ret_type_ HFNumberItem::_ret_field_() const { return _number._ret_field_; } \
+        _ret_type_ HFNumberItem::_ret_field_() const { return value<_ret_type_>(); } \
         HFNumberItem::operator _ret_type_() const { return _ret_field_(); }
     
     HFNUMBERITEM_FUNC_DEFINE(bool, boolVal);
@@ -58,4 +157,44 @@ namespace foundation
     HFNUMBERITEM_FUNC_DEFINE(double, doubleVal);
     HFNUMBERITEM_FUNC_DEFINE(long double, longDoubleVal);
 #undef HFNUMBERITEM_FUNC_DEFINE
+    
+    string HFNumberItem::stringVal() const
+    {
+        stringbuf buf;
+        ostream out(&buf);
+        if (HFNumberTypeIsSigned(_type)) {
+            out << longLongVal();
+        } else if (HFNumberTypeIsUnSigned(_type)) {
+            out << uLongLongVal();
+        } else {
+            out << longDoubleVal();
+        }
+        return buf.str();
+    }
+    
+    HFNumberItem::operator std::string() const { return stringVal(); }
+    
+    template<>
+    std::string HFDataItem<HFNumberItem>::stringVal() const
+    { return _value.stringVal(); }
+    
+    template<>
+    bool HFDataItem<HFNumberItem>::operator>(const HFDataItem &item) const
+    { return _value > item.value(); }
+    
+    template<>
+    bool HFDataItem<HFNumberItem>::operator>=(const HFDataItem &item) const
+    { return _value >= item.value(); }
+    
+    template<>
+    bool HFDataItem<HFNumberItem>::operator<(const HFDataItem &item) const
+    { return _value < item.value(); }
+    
+    template<>
+    bool HFDataItem<HFNumberItem>::operator<=(const HFDataItem &item) const
+    { return _value <= item.value(); }
+    
+    template<>
+    bool HFDataItem<HFNumberItem>::operator==(const HFDataItem &item) const
+    { return _value == item.value(); }
 }

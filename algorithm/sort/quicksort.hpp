@@ -17,6 +17,7 @@
 
 #include "dataitem.hpp"
 
+
 namespace algorithm
 {
     namespace sort
@@ -29,16 +30,33 @@ namespace algorithm
             typedef std::vector<DataItem> DataList;
             
         private:
-            int partition(DataList &list, int begin, int end)
+            static int partition(DataList &list, int low, int high)
             {
-                DataItem key = list[begin];
-                return 0;
+                DataItem key = list[low];
+                while (low < high) {
+                    while (low < high && list[high] >= key) high--;
+                    list[low] = list[high];
+                    while (low < high && list[low] <= key) low++;
+                    list[high] = list[low];
+                }
+                list[low] = key;
+                return low;
+            }
+            
+            static void sort(DataList &list, int low, int high)
+            {
+                if (low < 0 || low >= list.size()
+                    || high < 0 || high >= list.size() || low >= high) return;
+                
+                int idx = partition(list, low, high);
+                sort(list, low, idx - 1);
+                sort(list, idx + 1, high);
             }
             
         public:
-            void operator()(DataList &list)
+            static void sort(DataList &list)
             {
-                ;
+                sort(list, 0, (int)(list.size() - 1));
             }
         };
     }

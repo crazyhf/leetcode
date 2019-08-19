@@ -8,6 +8,10 @@
 
 #include "intersectary.hpp"
 
+#include "quicksort.hpp"
+
+#include "convertutils.hpp"
+
 using namespace std;
 using namespace leetcode;
 

@@ -15,6 +15,8 @@
 
 #include <stdio.h>
 
+#include "convertutils.hpp"
+
 
 namespace leetcode
 {
