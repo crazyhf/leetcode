@@ -9,13 +9,7 @@
 #ifndef quicksort_hpp
 #define quicksort_hpp
 
-#include <iostream>
-#include <string>
-#include <vector>
-
-#include <stdio.h>
-
-#include "dataitem.hpp"
+#include "sortalgorithm.hpp"
 
 
 namespace algorithm
@@ -26,13 +20,12 @@ namespace algorithm
         class HFQuickSort
         {
         public:
-            typedef foundation::HFDataItem<T> DataItem;
-            typedef std::vector<DataItem> DataList;
+            typedef std::vector<typename HFSortAlgorithm<T>::DataItem> DataList;
             
         private:
             static int partition(DataList &list, int low, int high)
             {
-                DataItem key = list[low];
+                typename HFSortAlgorithm<T>::DataItem key = list[low];
                 while (low < high) {
                     while (low < high && list[high] >= key) high--;
                     list[low] = list[high];

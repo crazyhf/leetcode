@@ -8,3 +8,5 @@ my exercise for leetcode with cpp language
 - [96. 不同的二叉搜索树](/leetcode/numtrees.hpp "不同的二叉搜索树") <https://leetcode-cn.com/problems/unique-binary-search-trees>
 
 - [128. 最长连续序列](/leetcode/longestconsecutivelist.hpp "最长连续序列") <https://leetcode-cn.com/problems/longest-consecutive-sequence>
+
+- [349. 两个数组的交集](/leetcode/intersectary.hpp "两个数组的交集") <https://leetcode-cn.com/problems/intersection-of-two-arrays>

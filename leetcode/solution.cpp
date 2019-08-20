@@ -8,8 +8,6 @@
 
 #include "solution.hpp"
 
-#include <sstream>
-
 using namespace std;
 using namespace leetcode;
 

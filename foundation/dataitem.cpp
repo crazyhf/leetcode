@@ -52,6 +52,7 @@ namespace foundation
     HFNUMBERTYPEOBJ_SPECIALIZE(float, FLOAT);
     HFNUMBERTYPEOBJ_SPECIALIZE(double, DOUBLE);
     HFNUMBERTYPEOBJ_SPECIALIZE(long double, LONGDOUBLE);
+    
 #undef HFNUMBERTYPEOBJ_SPECIALIZE
     
     
@@ -156,6 +157,7 @@ namespace foundation
     HFNUMBERITEM_FUNC_DEFINE(float, floatVal);
     HFNUMBERITEM_FUNC_DEFINE(double, doubleVal);
     HFNUMBERITEM_FUNC_DEFINE(long double, longDoubleVal);
+    
 #undef HFNUMBERITEM_FUNC_DEFINE
     
     string HFNumberItem::stringVal() const

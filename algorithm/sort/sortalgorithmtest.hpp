@@ -29,9 +29,11 @@ namespace algorithm
                 std::vector<TestParam> testParams();
                 
             public:
-                void testQuickSort();
+                void testQuickSort1();
+                void testQuickSort2();
                 
-                void testBubbleSort();
+                void testBubbleSort1();
+                void testBubbleSort2();
             };
         }
     }

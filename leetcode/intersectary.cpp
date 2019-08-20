@@ -7,10 +7,7 @@
 //
 
 #include "intersectary.hpp"
-
 #include "quicksort.hpp"
-
-#include "convertutils.hpp"
 
 using namespace std;
 using namespace leetcode;
@@ -44,10 +41,11 @@ void HFIntersectArySolution::testIntersection()
     vector<TestParam> paramVec = testParams();
     for (size_t idx = 0; idx < paramVec.size(); idx++) {
         TestParam param = paramVec[idx];
-        vector<int> result = intersection(param.nums1, param.nums2);
+        
         cout << endl << "Input : " << intVec2Str(param.nums1) << endl
-             << "        " << intVec2Str(param.nums2) << endl
-             << "Output: " << intVec2Str(result) << endl
+             << "        " << intVec2Str(param.nums2) << endl;
+        vector<int> result = intersection(param.nums1, param.nums2);
+        cout << "Output: " << intVec2Str(result) << endl
              << "Expect: " << intVec2Str(param.expect) << endl;
     }
     
@@ -59,5 +57,20 @@ void HFIntersectArySolution::testIntersection()
 
 vector<int> HFIntersectArySolution::intersection(vector<int>& nums1, vector<int>& nums2)
 {
-    return vector<int>();
+    algorithm::sort::HFQuickSort<int>::sort(nums1);
+    algorithm::sort::HFQuickSort<int>::sort(nums2);
+    vector<int> result;
+    for (size_t idx = 0, jdx = 0; idx < nums1.size() && jdx < nums2.size();) {
+        if (nums1[idx] == nums2[jdx]) {
+            while ((idx + 1) < nums1.size() && nums1[idx] == nums1[idx + 1]) idx++;
+            while ((jdx + 1) < nums2.size() && nums2[jdx] == nums2[jdx + 1]) jdx++;
+            result.push_back(nums1[idx]);
+            idx++; jdx++;
+        } else if (nums1[idx] < nums2[jdx]) {
+            idx++;
+        } else {
+            jdx++;
+        }
+    }
+    return result;
 }

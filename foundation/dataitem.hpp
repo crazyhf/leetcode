@@ -9,9 +9,6 @@
 #ifndef dataitem_hpp
 #define dataitem_hpp
 
-#include <assert.h>
-#include <stdio.h>
-
 #include <string>
 
 namespace foundation
@@ -98,6 +95,7 @@ namespace foundation
         HFNUMBERITEM_FUNC_DECLARE(float, floatVal);
         HFNUMBERITEM_FUNC_DECLARE(double, doubleVal);
         HFNUMBERITEM_FUNC_DECLARE(long double, longDoubleVal);
+        
 #undef HFNUMBERITEM_FUNC_DECLARE
         
         std::string stringVal() const;

@@ -9,13 +9,7 @@
 #ifndef bubblesort_hpp
 #define bubblesort_hpp
 
-#include <iostream>
-#include <string>
-#include <vector>
-
-#include <stdio.h>
-
-#include "dataitem.hpp"
+#include "sortalgorithm.hpp"
 
 
 namespace algorithm
@@ -26,7 +20,8 @@ namespace algorithm
         class HFBubbleSort
         {
         public:
-            typedef std::vector<foundation::HFDataItem<T>> DataList;
+            typedef std::vector<typename HFSortAlgorithm<T>::DataItem> DataList;
+            
             DataList operator()(DataList list);
         };
     }

@@ -15,16 +15,19 @@
 #include "towsum.hpp"
 #include "numtrees.hpp"
 #include "mergeary.hpp"
+#include "intersectary.hpp"
 #include "longestconsecutivelist.hpp"
 
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        algorithm::sort::test::HFSortAlgorithmTest().testQuickSort();
+        algorithm::sort::test::HFSortAlgorithmTest().testQuickSort1();
+        algorithm::sort::test::HFSortAlgorithmTest().testQuickSort2();
         
         leetcode::HFTwoSumSolution().testTwoSum();
         leetcode::HFNumTreesSolution().testNumTrees();
         leetcode::HFMergeArySolution().testMerge();
+        leetcode::HFIntersectArySolution().testIntersection();
         leetcode::HFLongestConsecutiveListSolution().testLongestConsecutive();
         
         foundation::HFNumberItem item1(2);
