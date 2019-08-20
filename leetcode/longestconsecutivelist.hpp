@@ -39,11 +39,11 @@ namespace leetcode
     public:
         void testLongestConsecutive();
         
-        int longestConsecutive(std::vector<int>& nums);
+        int longestConsecutive(std::vector<int> &nums);
         
-        int longestConsecutive2(std::vector<int>& nums);
+        int longestConsecutive2(std::vector<int> &nums);
         
-        int longestConsecutive3(std::vector<int>& nums);
+        int longestConsecutive3(std::vector<int> &nums);
     };
 }
 

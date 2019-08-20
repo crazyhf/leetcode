@@ -12,6 +12,12 @@
 		D24743ED22F133700084E611 /* bubblesort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D24743EB22F133700084E611 /* bubblesort.cpp */; };
 		D24743F522F183AD0084E611 /* dataitem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D24743F322F183AD0084E611 /* dataitem.cpp */; };
 		D255E753230B99A300FAB975 /* sortalgorithm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D255E751230B99A300FAB975 /* sortalgorithm.cpp */; };
+		D255E757230BCA8400FAB975 /* addtwonums.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D255E755230BCA8400FAB975 /* addtwonums.cpp */; };
+		D255E75A230BCFDB00FAB975 /* sqlist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D255E758230BCFDB00FAB975 /* sqlist.cpp */; };
+		D255E75D230BCFE700FAB975 /* linklist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D255E75B230BCFE700FAB975 /* linklist.cpp */; };
+		D255E760230BD00A00FAB975 /* datastruct.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D255E75E230BD00A00FAB975 /* datastruct.cpp */; };
+		D255E763230BDA7700FAB975 /* insertsort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D255E761230BDA7700FAB975 /* insertsort.cpp */; };
+		D255E766230BDA8C00FAB975 /* selectsort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D255E764230BDA8C00FAB975 /* selectsort.cpp */; };
 		D28341A1230A9E4400A74593 /* sortalgorithmtest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D283419F230A9E4400A74593 /* sortalgorithmtest.cpp */; };
 		D28341A4230AA1E700A74593 /* convertutils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D28341A2230AA1E700A74593 /* convertutils.cpp */; };
 		D2DDD15922F021A400C18EBF /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = D2DDD15822F021A400C18EBF /* main.mm */; };
@@ -46,6 +52,18 @@
 		D255E751230B99A300FAB975 /* sortalgorithm.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = sortalgorithm.cpp; sourceTree = "<group>"; };
 		D255E752230B99A300FAB975 /* sortalgorithm.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = sortalgorithm.hpp; sourceTree = "<group>"; };
 		D255E754230BA5D400FAB975 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		D255E755230BCA8400FAB975 /* addtwonums.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = addtwonums.cpp; sourceTree = "<group>"; };
+		D255E756230BCA8400FAB975 /* addtwonums.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = addtwonums.hpp; sourceTree = "<group>"; };
+		D255E758230BCFDB00FAB975 /* sqlist.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = sqlist.cpp; sourceTree = "<group>"; };
+		D255E759230BCFDB00FAB975 /* sqlist.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = sqlist.hpp; sourceTree = "<group>"; };
+		D255E75B230BCFE700FAB975 /* linklist.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = linklist.cpp; sourceTree = "<group>"; };
+		D255E75C230BCFE700FAB975 /* linklist.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = linklist.hpp; sourceTree = "<group>"; };
+		D255E75E230BD00A00FAB975 /* datastruct.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = datastruct.cpp; sourceTree = "<group>"; };
+		D255E75F230BD00A00FAB975 /* datastruct.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = datastruct.hpp; sourceTree = "<group>"; };
+		D255E761230BDA7700FAB975 /* insertsort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = insertsort.cpp; sourceTree = "<group>"; };
+		D255E762230BDA7700FAB975 /* insertsort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = insertsort.hpp; sourceTree = "<group>"; };
+		D255E764230BDA8C00FAB975 /* selectsort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = selectsort.cpp; sourceTree = "<group>"; };
+		D255E765230BDA8C00FAB975 /* selectsort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = selectsort.hpp; sourceTree = "<group>"; };
 		D283419F230A9E4400A74593 /* sortalgorithmtest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = sortalgorithmtest.cpp; sourceTree = "<group>"; };
 		D28341A0230A9E4400A74593 /* sortalgorithmtest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = sortalgorithmtest.hpp; sourceTree = "<group>"; };
 		D28341A2230AA1E700A74593 /* convertutils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = convertutils.cpp; sourceTree = "<group>"; };
@@ -87,6 +105,12 @@
 		D24743E222F1327B0084E611 /* datastruct */ = {
 			isa = PBXGroup;
 			children = (
+				D255E758230BCFDB00FAB975 /* sqlist.cpp */,
+				D255E759230BCFDB00FAB975 /* sqlist.hpp */,
+				D255E75B230BCFE700FAB975 /* linklist.cpp */,
+				D255E75C230BCFE700FAB975 /* linklist.hpp */,
+				D255E75E230BD00A00FAB975 /* datastruct.cpp */,
+				D255E75F230BD00A00FAB975 /* datastruct.hpp */,
 			);
 			path = datastruct;
 			sourceTree = "<group>";
@@ -101,10 +125,14 @@
 		D24743E422F132D00084E611 /* sort */ = {
 			isa = PBXGroup;
 			children = (
-				D24743E822F133200084E611 /* quicksort.cpp */,
-				D24743E922F133200084E611 /* quicksort.hpp */,
+				D255E764230BDA8C00FAB975 /* selectsort.cpp */,
+				D255E765230BDA8C00FAB975 /* selectsort.hpp */,
+				D255E761230BDA7700FAB975 /* insertsort.cpp */,
+				D255E762230BDA7700FAB975 /* insertsort.hpp */,
 				D24743EB22F133700084E611 /* bubblesort.cpp */,
 				D24743EC22F133700084E611 /* bubblesort.hpp */,
+				D24743E822F133200084E611 /* quicksort.cpp */,
+				D24743E922F133200084E611 /* quicksort.hpp */,
 				D255E751230B99A300FAB975 /* sortalgorithm.cpp */,
 				D255E752230B99A300FAB975 /* sortalgorithm.hpp */,
 				D283419F230A9E4400A74593 /* sortalgorithmtest.cpp */,
@@ -152,14 +180,16 @@
 				D2DDD16322F02AF400C18EBF /* solution.hpp */,
 				D2DDD15F22F0229500C18EBF /* towsum.cpp */,
 				D2DDD16022F0229500C18EBF /* towsum.hpp */,
-				D2DDD16522F031F500C18EBF /* numtrees.cpp */,
-				D2DDD16622F031F500C18EBF /* numtrees.hpp */,
+				D255E755230BCA8400FAB975 /* addtwonums.cpp */,
+				D255E756230BCA8400FAB975 /* addtwonums.hpp */,
 				D2DDD16822F033A200C18EBF /* mergeary.cpp */,
 				D2DDD16922F033A200C18EBF /* mergeary.hpp */,
-				D2DDD16B22F034E300C18EBF /* intersectary.cpp */,
-				D2DDD16C22F034E300C18EBF /* intersectary.hpp */,
+				D2DDD16522F031F500C18EBF /* numtrees.cpp */,
+				D2DDD16622F031F500C18EBF /* numtrees.hpp */,
 				D20568BF2305313600B0416F /* longestconsecutivelist.cpp */,
 				D20568C02305313600B0416F /* longestconsecutivelist.hpp */,
+				D2DDD16B22F034E300C18EBF /* intersectary.cpp */,
+				D2DDD16C22F034E300C18EBF /* intersectary.hpp */,
 			);
 			path = leetcode;
 			sourceTree = "<group>";
@@ -223,16 +253,22 @@
 				D2DDD16722F031F500C18EBF /* numtrees.cpp in Sources */,
 				D2DDD16A22F033A200C18EBF /* mergeary.cpp in Sources */,
 				D28341A1230A9E4400A74593 /* sortalgorithmtest.cpp in Sources */,
+				D255E75A230BCFDB00FAB975 /* sqlist.cpp in Sources */,
 				D24743EA22F133200084E611 /* quicksort.cpp in Sources */,
 				D24743F522F183AD0084E611 /* dataitem.cpp in Sources */,
+				D255E763230BDA7700FAB975 /* insertsort.cpp in Sources */,
 				D24743ED22F133700084E611 /* bubblesort.cpp in Sources */,
+				D255E75D230BCFE700FAB975 /* linklist.cpp in Sources */,
 				D20568C12305313600B0416F /* longestconsecutivelist.cpp in Sources */,
+				D255E757230BCA8400FAB975 /* addtwonums.cpp in Sources */,
 				D28341A4230AA1E700A74593 /* convertutils.cpp in Sources */,
 				D2DDD16122F0229500C18EBF /* towsum.cpp in Sources */,
 				D255E753230B99A300FAB975 /* sortalgorithm.cpp in Sources */,
 				D2DDD16422F02AF400C18EBF /* solution.cpp in Sources */,
+				D255E760230BD00A00FAB975 /* datastruct.cpp in Sources */,
 				D2DDD16D22F034E300C18EBF /* intersectary.cpp in Sources */,
 				D2DDD15922F021A400C18EBF /* main.mm in Sources */,
+				D255E766230BDA8C00FAB975 /* selectsort.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

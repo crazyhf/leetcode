@@ -11,6 +11,7 @@
 #include <sstream>
 
 using namespace std;
+using namespace leetcode::datastruct;
 
 
 namespace foundation
@@ -47,6 +48,25 @@ namespace foundation
         }
         out << "]";
         return buf.str();
+    }
+    
+    string linkList2Str(HFListNode<int> *list)
+    {
+        stringbuf buf;
+        ostream out(&buf);
+        
+        HFListNode<int> *ptr = list;
+        out << "(";
+        while (ptr) {
+            if (ptr != list) {
+                out << " -> " << ptr->val;
+            } else {
+                out << ptr->val;
+            }
+            ptr = ptr->next;
+        }
+        out << ")";
+        return buf.str();;
     }
     
     vector<HFDataItem<HFNumberItem>> intVec2DataList(const vector<int> &intVec)

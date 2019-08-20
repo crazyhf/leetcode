@@ -46,7 +46,7 @@ namespace leetcode
     public:
         void testIntersection();
         
-        std::vector<int> intersection(std::vector<int>& nums1, std::vector<int>& nums2);
+        std::vector<int> intersection(std::vector<int> &nums1, std::vector<int> &nums2);
     };
 }
 

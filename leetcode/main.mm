@@ -13,22 +13,27 @@
 #include "sortalgorithmtest.hpp"
 
 #include "towsum.hpp"
-#include "numtrees.hpp"
+#include "addtwonums.hpp"
 #include "mergeary.hpp"
-#include "intersectary.hpp"
+#include "numtrees.hpp"
 #include "longestconsecutivelist.hpp"
+#include "intersectary.hpp"
 
+using namespace leetcode;
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         algorithm::sort::test::HFSortAlgorithmTest().testQuickSort1();
         algorithm::sort::test::HFSortAlgorithmTest().testQuickSort2();
+        algorithm::sort::test::HFSortAlgorithmTest().testBubbleSort1();
+        algorithm::sort::test::HFSortAlgorithmTest().testBubbleSort2();
         
-        leetcode::HFTwoSumSolution().testTwoSum();
-        leetcode::HFNumTreesSolution().testNumTrees();
-        leetcode::HFMergeArySolution().testMerge();
-        leetcode::HFIntersectArySolution().testIntersection();
-        leetcode::HFLongestConsecutiveListSolution().testLongestConsecutive();
+        HFTwoSumSolution().testTwoSum();
+        HFAddTwoNumsSolution().testAddTwoNumbers();
+        HFMergeArySolution().testMerge();
+        HFNumTreesSolution().testNumTrees();
+        HFLongestConsecutiveListSolution().testLongestConsecutive();
+        HFIntersectArySolution().testIntersection();
         
         foundation::HFNumberItem item1(2);
         

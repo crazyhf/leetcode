@@ -13,7 +13,7 @@
 
 using namespace std;
 using namespace foundation;
-using namespace algorithm::sort::test;
+using namespace leetcode::algorithm::sort::test;
 
 
 vector<HFSortAlgorithmTest::TestParam> HFSortAlgorithmTest::testParams()
@@ -35,7 +35,7 @@ vector<HFSortAlgorithmTest::TestParam> HFSortAlgorithmTest::testParams()
 void HFSortAlgorithmTest::testQuickSort1()
 {
     cout << "===============================================" << endl
-         << "HFSortAlgorithmTest testQuickSort1 :" << endl;
+         << "HFSortAlgorithmTest testQuickSort1 快速排序 :" << endl;
     
     vector<TestParam> paramVec = testParams();
     for (size_t idx = 0; idx < paramVec.size(); idx++) {
@@ -53,7 +53,7 @@ void HFSortAlgorithmTest::testQuickSort1()
 void HFSortAlgorithmTest::testQuickSort2()
 {
     cout << "===============================================" << endl
-         << "HFSortAlgorithmTest testQuickSort2 :" << endl;
+         << "HFSortAlgorithmTest testQuickSort2 快速排序 :" << endl;
     
     vector<TestParam> paramVec = testParams();
     for (size_t idx = 0; idx < paramVec.size(); idx++) {
@@ -69,10 +69,35 @@ void HFSortAlgorithmTest::testQuickSort2()
 
 void HFSortAlgorithmTest::testBubbleSort1()
 {
-    ;
+    cout << "===============================================" << endl
+         << "HFSortAlgorithmTest testBubbleSort1 冒泡排序 :" << endl;
+    
+    vector<TestParam> paramVec = testParams();
+    for (size_t idx = 0; idx < paramVec.size(); idx++) {
+        TestParam param = paramVec[idx];
+        vector<HFDataItem<HFNumberItem>> list = intVec2DataList(param.nums);
+        HFBubbleSort<HFDataItem<HFNumberItem>>::sort(list);
+        cout << endl << "Input : " << intVec2Str(param.nums) << endl
+             << "Output: " << dataList2Str(list) << endl
+             << "Expect: " << intVec2Str(param.expect) << endl;
+    }
+    
+    cout << "===============================================" << endl << endl;
 }
 
 void HFSortAlgorithmTest::testBubbleSort2()
 {
-    ;
+    cout << "===============================================" << endl
+         << "HFSortAlgorithmTest testBubbleSort2 冒泡排序 :" << endl;
+    
+    vector<TestParam> paramVec = testParams();
+    for (size_t idx = 0; idx < paramVec.size(); idx++) {
+        TestParam param = paramVec[idx];
+        cout << endl << "Input : " << intVec2Str(param.nums) << endl;
+        HFBubbleSort<int>::sort(param.nums);
+        cout << "Output: " << intVec2Str(param.nums) << endl
+             << "Expect: " << intVec2Str(param.expect) << endl;
+    }
+    
+    cout << "===============================================" << endl << endl;
 }

@@ -1,16 +1,15 @@
 //
-//  sortalgorithm.hpp
+//  datastruct.hpp
 //  leetcode
 //
 //  Created by linhuafeng on 2019/8/20.
 //  Copyright © 2019 Haven·Lin. All rights reserved.
 //
 
-#ifndef sortalgorithm_hpp
-#define sortalgorithm_hpp
+#ifndef datastruct_hpp
+#define datastruct_hpp
 
 #include <iostream>
-#include <vector>
 
 #include <stdio.h>
 
@@ -19,13 +18,15 @@
 
 namespace leetcode
 {
-    namespace algorithm
+    namespace datastruct
     {
-        namespace sort
+        template <typename T>
+        class HFDataStruct
         {
-            
-        }
+        public:
+            typedef T Elem;
+        };
     }
 }
 
-#endif /* sortalgorithm_hpp */
+#endif /* datastruct_hpp */

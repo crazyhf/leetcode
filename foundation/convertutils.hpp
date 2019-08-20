@@ -12,7 +12,8 @@
 #include <string>
 #include <vector>
 
-#include "dataitem.hpp"
+#include "sqlist.hpp"
+#include "linklist.hpp"
 
 
 namespace foundation
@@ -20,6 +21,8 @@ namespace foundation
     std::string intVec2Str(const std::vector<int> &intVec);
     
     std::string dataList2Str(const std::vector<HFDataItem<HFNumberItem>> &dataList);
+    
+    std::string linkList2Str(leetcode::datastruct::HFListNode<int> *list);
     
     std::vector<HFDataItem<HFNumberItem>> intVec2DataList(const std::vector<int> &intVec);
 }

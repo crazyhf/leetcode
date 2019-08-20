@@ -48,7 +48,7 @@ void HFMergeArySolution::testMerge()
 
 /// ======================================================================
 
-void HFMergeArySolution::merge(vector<int>& nums1, int m, vector<int>& nums2, int n)
+void HFMergeArySolution::merge(vector<int> &nums1, int m, vector<int> &nums2, int n)
 {
     int idx = m - 1, jdx = n - 1, kdx = m + n - 1;
     while (kdx >= 0) {

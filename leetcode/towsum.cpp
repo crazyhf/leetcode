@@ -45,7 +45,7 @@ void HFTwoSumSolution::testTwoSum()
 
 /// ======================================================================
 
-vector<int> HFTwoSumSolution::twoSum(vector<int>& nums, int target)
+vector<int> HFTwoSumSolution::twoSum(vector<int> &nums, int target)
 {
     vector<int> diffVals;
     for (int idx = 0; idx < nums.size(); idx++) {
@@ -60,7 +60,7 @@ vector<int> HFTwoSumSolution::twoSum(vector<int>& nums, int target)
     return vector<int>();
 }
 
-vector<int> HFTwoSumSolution::twoSum2(vector<int>& nums, int target)
+vector<int> HFTwoSumSolution::twoSum2(vector<int> &nums, int target)
 {
     map<int, int> diffMap;
     for (int idx = 0; idx < nums.size(); idx++) {

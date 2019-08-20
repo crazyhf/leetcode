@@ -55,7 +55,7 @@ void HFIntersectArySolution::testIntersection()
 
 /// ======================================================================
 
-vector<int> HFIntersectArySolution::intersection(vector<int>& nums1, vector<int>& nums2)
+vector<int> HFIntersectArySolution::intersection(vector<int> &nums1, vector<int> &nums2)
 {
     algorithm::sort::HFQuickSort<int>::sort(nums1);
     algorithm::sort::HFQuickSort<int>::sort(nums2);

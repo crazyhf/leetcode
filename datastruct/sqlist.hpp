@@ -1,21 +1,22 @@
 //
-//  sortalgorithm.cpp
+//  sqlist.hpp
 //  leetcode
 //
 //  Created by linhuafeng on 2019/8/20.
 //  Copyright © 2019 Haven·Lin. All rights reserved.
 //
 
-#include "sortalgorithm.hpp"
+#ifndef sqlist_hpp
+#define sqlist_hpp
+
+#include "datastruct.hpp"
 
 
 namespace leetcode
 {
-    namespace algorithm
+    namespace datastruct
     {
-        namespace sort
-        {
-            
-        }
     }
 }
+
+#endif /* sqlist_hpp */

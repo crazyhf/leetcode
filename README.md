@@ -1,7 +1,27 @@
 # leetcode
 my exercise for leetcode with cpp language
 
+### 数据结构
+
+### 算法
+
+##### 排序
+
+- [选择排序](/algorithm/sort/selectsort.hpp "选择排序") <https://www.programiz.com/dsa/selection-sort>
+
+- [插入排序](/algorithm/sort/insertsort.hpp "插入排序") <https://www.programiz.com/dsa/insertion-sort>
+
+- [冒泡排序](/algorithm/sort/bubblesort.hpp "冒泡排序") <https://www.programiz.com/dsa/bubble-sort>
+
+- [快速排序](/algorithm/sort/quicksort.hpp "快速排序") <https://www.programiz.com/dsa/quick-sort>
+
+##### 查找
+
+### leetcode 题解
+
 - [1. 两数之和](/leetcode/towsum.hpp "两数之和") <https://leetcode-cn.com/problems/two-sum>
+
+- [2. 两数相加](/leetcode/addtwonums.hpp "两数相加") <https://leetcode-cn.com/problems/add-two-numbers>
 
 - [88. 合并两个有序数组](/leetcode/mergeary.hpp "合并两个有序数组") <https://leetcode-cn.com/problems/merge-sorted-array>
 

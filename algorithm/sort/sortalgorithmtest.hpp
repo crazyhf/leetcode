@@ -13,28 +13,31 @@
 #include "quicksort.hpp"
 
 
-namespace algorithm
+namespace leetcode
 {
-    namespace sort
+    namespace algorithm
     {
-        namespace test
+        namespace sort
         {
-            class HFSortAlgorithmTest
+            namespace test
             {
-            private:
-                struct TestParam {
-                    std::vector<int> nums;
-                    std::vector<int> expect;
+                class HFSortAlgorithmTest
+                {
+                private:
+                    struct TestParam {
+                        std::vector<int> nums;
+                        std::vector<int> expect;
+                    };
+                    std::vector<TestParam> testParams();
+                    
+                public:
+                    void testQuickSort1();
+                    void testQuickSort2();
+                    
+                    void testBubbleSort1();
+                    void testBubbleSort2();
                 };
-                std::vector<TestParam> testParams();
-                
-            public:
-                void testQuickSort1();
-                void testQuickSort2();
-                
-                void testBubbleSort1();
-                void testBubbleSort2();
-            };
+            }
         }
     }
 }
