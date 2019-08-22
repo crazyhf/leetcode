@@ -30,3 +30,5 @@ my exercise for leetcode with cpp language
 - [128. 最长连续序列](/leetcode/longestconsecutivelist.hpp "最长连续序列") <https://leetcode-cn.com/problems/longest-consecutive-sequence>
 
 - [349. 两个数组的交集](/leetcode/intersectary.hpp "两个数组的交集") <https://leetcode-cn.com/problems/intersection-of-two-arrays>
+
+- [445. 两数相加 II](/leetcode/addtwonums_ii.hpp "两数相加 II") <https://leetcode-cn.com/problems/add-two-numbers-ii>

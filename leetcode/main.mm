@@ -18,6 +18,7 @@
 #include "numtrees.hpp"
 #include "longestconsecutivelist.hpp"
 #include "intersectary.hpp"
+#include "addtwonums_ii.hpp"
 
 using namespace leetcode;
 
@@ -34,6 +35,7 @@ int main(int argc, const char * argv[]) {
         HFNumTreesSolution().testNumTrees();
         HFLongestConsecutiveListSolution().testLongestConsecutive();
         HFIntersectArySolution().testIntersection();
+        HFAddTwoNumsSolutionII().testAddTwoNumbers();
         
         foundation::HFNumberItem item1(2);
         

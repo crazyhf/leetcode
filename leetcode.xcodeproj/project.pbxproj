@@ -18,6 +18,7 @@
 		D255E760230BD00A00FAB975 /* datastruct.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D255E75E230BD00A00FAB975 /* datastruct.cpp */; };
 		D255E763230BDA7700FAB975 /* insertsort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D255E761230BDA7700FAB975 /* insertsort.cpp */; };
 		D255E766230BDA8C00FAB975 /* selectsort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D255E764230BDA8C00FAB975 /* selectsort.cpp */; };
+		D255E76C230BFA3200FAB975 /* addtwonums_ii.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D255E76A230BFA3200FAB975 /* addtwonums_ii.cpp */; };
 		D28341A1230A9E4400A74593 /* sortalgorithmtest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D283419F230A9E4400A74593 /* sortalgorithmtest.cpp */; };
 		D28341A4230AA1E700A74593 /* convertutils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D28341A2230AA1E700A74593 /* convertutils.cpp */; };
 		D2DDD15922F021A400C18EBF /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = D2DDD15822F021A400C18EBF /* main.mm */; };
@@ -64,6 +65,8 @@
 		D255E762230BDA7700FAB975 /* insertsort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = insertsort.hpp; sourceTree = "<group>"; };
 		D255E764230BDA8C00FAB975 /* selectsort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = selectsort.cpp; sourceTree = "<group>"; };
 		D255E765230BDA8C00FAB975 /* selectsort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = selectsort.hpp; sourceTree = "<group>"; };
+		D255E76A230BFA3200FAB975 /* addtwonums_ii.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = addtwonums_ii.cpp; sourceTree = "<group>"; };
+		D255E76B230BFA3200FAB975 /* addtwonums_ii.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = addtwonums_ii.hpp; sourceTree = "<group>"; };
 		D283419F230A9E4400A74593 /* sortalgorithmtest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = sortalgorithmtest.cpp; sourceTree = "<group>"; };
 		D28341A0230A9E4400A74593 /* sortalgorithmtest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = sortalgorithmtest.hpp; sourceTree = "<group>"; };
 		D28341A2230AA1E700A74593 /* convertutils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = convertutils.cpp; sourceTree = "<group>"; };
@@ -190,6 +193,8 @@
 				D20568C02305313600B0416F /* longestconsecutivelist.hpp */,
 				D2DDD16B22F034E300C18EBF /* intersectary.cpp */,
 				D2DDD16C22F034E300C18EBF /* intersectary.hpp */,
+				D255E76A230BFA3200FAB975 /* addtwonums_ii.cpp */,
+				D255E76B230BFA3200FAB975 /* addtwonums_ii.hpp */,
 			);
 			path = leetcode;
 			sourceTree = "<group>";
@@ -264,6 +269,7 @@
 				D28341A4230AA1E700A74593 /* convertutils.cpp in Sources */,
 				D2DDD16122F0229500C18EBF /* towsum.cpp in Sources */,
 				D255E753230B99A300FAB975 /* sortalgorithm.cpp in Sources */,
+				D255E76C230BFA3200FAB975 /* addtwonums_ii.cpp in Sources */,
 				D2DDD16422F02AF400C18EBF /* solution.cpp in Sources */,
 				D255E760230BD00A00FAB975 /* datastruct.cpp in Sources */,
 				D2DDD16D22F034E300C18EBF /* intersectary.cpp in Sources */,
