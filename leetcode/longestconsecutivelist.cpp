@@ -35,7 +35,7 @@ vector<HFLongestConsecutiveListSolution::TestParam> HFLongestConsecutiveListSolu
 void HFLongestConsecutiveListSolution::testLongestConsecutive()
 {
     cout << "===============================================" << endl
-         << "HFLongestConsecutiveListSolution :" << endl
+         << "HFLongestConsecutiveListSolution (128. 最长连续序列) :" << endl
          << "给定一个未排序的整数数组，找出最长连续序列的长度。要求算法的时间复杂度为O(n)。" << endl;
     
     vector<TestParam> paramVec = testParams();

@@ -35,7 +35,7 @@ vector<HFIntersectArySolution::TestParam> HFIntersectArySolution::testParams()
 void HFIntersectArySolution::testIntersection()
 {
     cout << "===============================================" << endl
-         << "HFIntersectArySolution :" << endl
+         << "HFIntersectArySolution (349. 两个数组的交集) :" << endl
          << "给定两个数组，编写一个函数来计算它们的交集。" << endl;
     
     vector<TestParam> paramVec = testParams();

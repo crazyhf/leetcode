@@ -23,6 +23,8 @@ my exercise for leetcode with cpp language
 
 - [2. 两数相加](/leetcode/addtwonums.hpp "两数相加") <https://leetcode-cn.com/problems/add-two-numbers>
 
+- [3. 无重复字符的最长子串](/leetcode/longestsubstrnorepeatchar.hpp "无重复字符的最长子串") <https://leetcode-cn.com/problems/longest-substring-without-repeating-characters>
+
 - [88. 合并两个有序数组](/leetcode/mergeary.hpp "合并两个有序数组") <https://leetcode-cn.com/problems/merge-sorted-array>
 
 - [96. 不同的二叉搜索树](/leetcode/numtrees.hpp "不同的二叉搜索树") <https://leetcode-cn.com/problems/unique-binary-search-trees>

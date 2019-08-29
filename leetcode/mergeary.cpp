@@ -28,7 +28,7 @@ vector<HFMergeArySolution::TestParam> HFMergeArySolution::testParams()
 void HFMergeArySolution::testMerge()
 {
     cout << "===============================================" << endl
-         << "HFMergeArySolution :" << endl
+         << "HFMergeArySolution (88. 合并两个有序数组) :" << endl
          << "给定两个有序整数数组nums1和nums2，将nums2合并到nums1中，使得num1成为一个有序数组。" << endl;
     
     vector<TestParam> paramVec = testParams();

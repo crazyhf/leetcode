@@ -27,7 +27,7 @@ vector<HFNumTreesSolution::TestParam> HFNumTreesSolution::testParams()
 void HFNumTreesSolution::testNumTrees()
 {
     cout << "===============================================" << endl
-         << "HFNumTreesSolution :" << endl
+         << "HFNumTreesSolution (96. 不同的二叉搜索树) :" << endl
          << "给定一个整数n，求以1 ... n为节点组成的二叉搜索树有多少种？" << endl;
     
     vector<TestParam> paramVec = testParams();

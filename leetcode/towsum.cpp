@@ -25,7 +25,7 @@ vector<HFTwoSumSolution::TestParam> HFTwoSumSolution::testParams()
 void HFTwoSumSolution::testTwoSum()
 {
     cout << "===============================================" << endl
-         << "HFTwoSumSolution :" << endl
+         << "HFTwoSumSolution (1. 两数之和) :" << endl
          << "给定一个整数数组nums和一个目标值target," << endl
          << "请你在该数组中找出和为目标值的那两个整数，并返回他们的数组下标。" << endl;
     
