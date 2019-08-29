@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		81F262992317824F002A6549 /* longestsubstrnorepeatchar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81F262972317824F002A6549 /* longestsubstrnorepeatchar.cpp */; };
 		81F2629C2317A029002A6549 /* midoftwosortedary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81F2629A2317A029002A6549 /* midoftwosortedary.cpp */; };
+		81F2629F2317ADB9002A6549 /* longestpalindromicsubstr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81F2629D2317ADB9002A6549 /* longestpalindromicsubstr.cpp */; };
 		D20568C12305313600B0416F /* longestconsecutivelist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D20568BF2305313600B0416F /* longestconsecutivelist.cpp */; };
 		D24743EA22F133200084E611 /* quicksort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D24743E822F133200084E611 /* quicksort.cpp */; };
 		D24743ED22F133700084E611 /* bubblesort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D24743EB22F133700084E611 /* bubblesort.cpp */; };
@@ -48,6 +49,8 @@
 		81F262982317824F002A6549 /* longestsubstrnorepeatchar.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = longestsubstrnorepeatchar.hpp; sourceTree = "<group>"; };
 		81F2629A2317A029002A6549 /* midoftwosortedary.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = midoftwosortedary.cpp; sourceTree = "<group>"; };
 		81F2629B2317A029002A6549 /* midoftwosortedary.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = midoftwosortedary.hpp; sourceTree = "<group>"; };
+		81F2629D2317ADB9002A6549 /* longestpalindromicsubstr.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = longestpalindromicsubstr.cpp; sourceTree = "<group>"; };
+		81F2629E2317ADB9002A6549 /* longestpalindromicsubstr.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = longestpalindromicsubstr.hpp; sourceTree = "<group>"; };
 		D20568BF2305313600B0416F /* longestconsecutivelist.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = longestconsecutivelist.cpp; sourceTree = "<group>"; };
 		D20568C02305313600B0416F /* longestconsecutivelist.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = longestconsecutivelist.hpp; sourceTree = "<group>"; };
 		D24743E822F133200084E611 /* quicksort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = quicksort.cpp; sourceTree = "<group>"; };
@@ -195,6 +198,8 @@
 				81F262982317824F002A6549 /* longestsubstrnorepeatchar.hpp */,
 				81F2629A2317A029002A6549 /* midoftwosortedary.cpp */,
 				81F2629B2317A029002A6549 /* midoftwosortedary.hpp */,
+				81F2629D2317ADB9002A6549 /* longestpalindromicsubstr.cpp */,
+				81F2629E2317ADB9002A6549 /* longestpalindromicsubstr.hpp */,
 				D2DDD16822F033A200C18EBF /* mergeary.cpp */,
 				D2DDD16922F033A200C18EBF /* mergeary.hpp */,
 				D2DDD16522F031F500C18EBF /* numtrees.cpp */,
@@ -276,6 +281,7 @@
 				D255E75D230BCFE700FAB975 /* linklist.cpp in Sources */,
 				D20568C12305313600B0416F /* longestconsecutivelist.cpp in Sources */,
 				D255E757230BCA8400FAB975 /* addtwonums.cpp in Sources */,
+				81F2629F2317ADB9002A6549 /* longestpalindromicsubstr.cpp in Sources */,
 				D28341A4230AA1E700A74593 /* convertutils.cpp in Sources */,
 				D2DDD16122F0229500C18EBF /* towsum.cpp in Sources */,
 				D255E753230B99A300FAB975 /* sortalgorithm.cpp in Sources */,

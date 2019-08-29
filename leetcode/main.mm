@@ -16,6 +16,7 @@
 #include "addtwonums.hpp"
 #include "longestsubstrnorepeatchar.hpp"
 #include "midoftwosortedary.hpp"
+#include "longestpalindromicsubstr.hpp"
 #include "mergeary.hpp"
 #include "numtrees.hpp"
 #include "longestconsecutivelist.hpp"
@@ -35,6 +36,7 @@ int main(int argc, const char * argv[]) {
         HFAddTwoNumsSolution().testAddTwoNumbers();
         HFLongestSubstrNoRepeatCharSolution().testLenOfLongestSubstr();
         HFMidOfTwoSortedArySolution().testFindMidSortedArys();
+        HFLongestPalindromicSubstrSolution().testLongestPalindrome();
         HFMergeArySolution().testMerge();
         HFNumTreesSolution().testNumTrees();
         HFLongestConsecutiveListSolution().testLongestConsecutive();

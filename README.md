@@ -24,7 +24,10 @@ my exercise for leetcode with cpp language
 - [2. 两数相加](/leetcode/addtwonums.hpp "两数相加") <https://leetcode-cn.com/problems/add-two-numbers>
 
 - [3. 无重复字符的最长子串](/leetcode/longestsubstrnorepeatchar.hpp "无重复字符的最长子串") <https://leetcode-cn.com/problems/longest-substring-without-repeating-characters>
+
 - [4. 寻找两个有序数组的中位数](/leetcode/midoftwosortedary.hpp "寻找两个有序数组的中位数") <https://leetcode-cn.com/problems/median-of-two-sorted-arrays>
+
+- [5. 最长回文子串](/leetcode/longestpalindromicsubstr.hpp "最长回文子串") <https://leetcode-cn.com/problems/longest-palindromic-substring>
 
 - [88. 合并两个有序数组](/leetcode/mergeary.hpp "合并两个有序数组") <https://leetcode-cn.com/problems/merge-sorted-array>
 
