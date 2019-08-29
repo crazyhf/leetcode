@@ -15,6 +15,7 @@
 #include "towsum.hpp"
 #include "addtwonums.hpp"
 #include "longestsubstrnorepeatchar.hpp"
+#include "midoftwosortedary.hpp"
 #include "mergeary.hpp"
 #include "numtrees.hpp"
 #include "longestconsecutivelist.hpp"
@@ -33,6 +34,7 @@ int main(int argc, const char * argv[]) {
         HFTwoSumSolution().testTwoSum();
         HFAddTwoNumsSolution().testAddTwoNumbers();
         HFLongestSubstrNoRepeatCharSolution().testLenOfLongestSubstr();
+        HFMidOfTwoSortedArySolution().testFindMidSortedArys();
         HFMergeArySolution().testMerge();
         HFNumTreesSolution().testNumTrees();
         HFLongestConsecutiveListSolution().testLongestConsecutive();

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		81F262992317824F002A6549 /* longestsubstrnorepeatchar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81F262972317824F002A6549 /* longestsubstrnorepeatchar.cpp */; };
+		81F2629C2317A029002A6549 /* midoftwosortedary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81F2629A2317A029002A6549 /* midoftwosortedary.cpp */; };
 		D20568C12305313600B0416F /* longestconsecutivelist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D20568BF2305313600B0416F /* longestconsecutivelist.cpp */; };
 		D24743EA22F133200084E611 /* quicksort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D24743E822F133200084E611 /* quicksort.cpp */; };
 		D24743ED22F133700084E611 /* bubblesort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D24743EB22F133700084E611 /* bubblesort.cpp */; };
@@ -45,6 +46,8 @@
 /* Begin PBXFileReference section */
 		81F262972317824F002A6549 /* longestsubstrnorepeatchar.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = longestsubstrnorepeatchar.cpp; sourceTree = "<group>"; };
 		81F262982317824F002A6549 /* longestsubstrnorepeatchar.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = longestsubstrnorepeatchar.hpp; sourceTree = "<group>"; };
+		81F2629A2317A029002A6549 /* midoftwosortedary.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = midoftwosortedary.cpp; sourceTree = "<group>"; };
+		81F2629B2317A029002A6549 /* midoftwosortedary.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = midoftwosortedary.hpp; sourceTree = "<group>"; };
 		D20568BF2305313600B0416F /* longestconsecutivelist.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = longestconsecutivelist.cpp; sourceTree = "<group>"; };
 		D20568C02305313600B0416F /* longestconsecutivelist.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = longestconsecutivelist.hpp; sourceTree = "<group>"; };
 		D24743E822F133200084E611 /* quicksort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = quicksort.cpp; sourceTree = "<group>"; };
@@ -190,6 +193,8 @@
 				D255E756230BCA8400FAB975 /* addtwonums.hpp */,
 				81F262972317824F002A6549 /* longestsubstrnorepeatchar.cpp */,
 				81F262982317824F002A6549 /* longestsubstrnorepeatchar.hpp */,
+				81F2629A2317A029002A6549 /* midoftwosortedary.cpp */,
+				81F2629B2317A029002A6549 /* midoftwosortedary.hpp */,
 				D2DDD16822F033A200C18EBF /* mergeary.cpp */,
 				D2DDD16922F033A200C18EBF /* mergeary.hpp */,
 				D2DDD16522F031F500C18EBF /* numtrees.cpp */,
@@ -280,6 +285,7 @@
 				D255E760230BD00A00FAB975 /* datastruct.cpp in Sources */,
 				D2DDD16D22F034E300C18EBF /* intersectary.cpp in Sources */,
 				D2DDD15922F021A400C18EBF /* main.mm in Sources */,
+				81F2629C2317A029002A6549 /* midoftwosortedary.cpp in Sources */,
 				D255E766230BDA8C00FAB975 /* selectsort.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
