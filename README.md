@@ -29,6 +29,8 @@ my exercise for leetcode with cpp language
 
 - [5. 最长回文子串](/leetcode/longestpalindromicsubstr.hpp "最长回文子串") <https://leetcode-cn.com/problems/longest-palindromic-substring>
 
+- [7. 整数反转](/leetcode/reverseinteger.hpp "整数反转") <https://leetcode-cn.com/problems/reverse-integer>
+
 - [88. 合并两个有序数组](/leetcode/mergeary.hpp "合并两个有序数组") <https://leetcode-cn.com/problems/merge-sorted-array>
 
 - [96. 不同的二叉搜索树](/leetcode/numtrees.hpp "不同的二叉搜索树") <https://leetcode-cn.com/problems/unique-binary-search-trees>

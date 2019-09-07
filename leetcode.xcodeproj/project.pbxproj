@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81EBF4F9231C07EC00ABA86C /* reverseinteger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81EBF4F7231C07EC00ABA86C /* reverseinteger.cpp */; };
 		81F262992317824F002A6549 /* longestsubstrnorepeatchar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81F262972317824F002A6549 /* longestsubstrnorepeatchar.cpp */; };
 		81F2629C2317A029002A6549 /* midoftwosortedary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81F2629A2317A029002A6549 /* midoftwosortedary.cpp */; };
 		81F2629F2317ADB9002A6549 /* longestpalindromicsubstr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81F2629D2317ADB9002A6549 /* longestpalindromicsubstr.cpp */; };
@@ -45,6 +46,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		81EBF4F7231C07EC00ABA86C /* reverseinteger.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = reverseinteger.cpp; sourceTree = "<group>"; };
+		81EBF4F8231C07EC00ABA86C /* reverseinteger.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = reverseinteger.hpp; sourceTree = "<group>"; };
 		81F262972317824F002A6549 /* longestsubstrnorepeatchar.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = longestsubstrnorepeatchar.cpp; sourceTree = "<group>"; };
 		81F262982317824F002A6549 /* longestsubstrnorepeatchar.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = longestsubstrnorepeatchar.hpp; sourceTree = "<group>"; };
 		81F2629A2317A029002A6549 /* midoftwosortedary.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = midoftwosortedary.cpp; sourceTree = "<group>"; };
@@ -200,6 +203,8 @@
 				81F2629B2317A029002A6549 /* midoftwosortedary.hpp */,
 				81F2629D2317ADB9002A6549 /* longestpalindromicsubstr.cpp */,
 				81F2629E2317ADB9002A6549 /* longestpalindromicsubstr.hpp */,
+				81EBF4F7231C07EC00ABA86C /* reverseinteger.cpp */,
+				81EBF4F8231C07EC00ABA86C /* reverseinteger.hpp */,
 				D2DDD16822F033A200C18EBF /* mergeary.cpp */,
 				D2DDD16922F033A200C18EBF /* mergeary.hpp */,
 				D2DDD16522F031F500C18EBF /* numtrees.cpp */,
@@ -291,6 +296,7 @@
 				D255E760230BD00A00FAB975 /* datastruct.cpp in Sources */,
 				D2DDD16D22F034E300C18EBF /* intersectary.cpp in Sources */,
 				D2DDD15922F021A400C18EBF /* main.mm in Sources */,
+				81EBF4F9231C07EC00ABA86C /* reverseinteger.cpp in Sources */,
 				81F2629C2317A029002A6549 /* midoftwosortedary.cpp in Sources */,
 				D255E766230BDA8C00FAB975 /* selectsort.cpp in Sources */,
 			);

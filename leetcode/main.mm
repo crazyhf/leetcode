@@ -17,6 +17,7 @@
 #include "longestsubstrnorepeatchar.hpp"
 #include "midoftwosortedary.hpp"
 #include "longestpalindromicsubstr.hpp"
+#include "reverseinteger.hpp"
 #include "mergeary.hpp"
 #include "numtrees.hpp"
 #include "longestconsecutivelist.hpp"
@@ -37,6 +38,7 @@ int main(int argc, const char * argv[]) {
         HFLongestSubstrNoRepeatCharSolution().testLenOfLongestSubstr();
         HFMidOfTwoSortedArySolution().testFindMidSortedArys();
         HFLongestPalindromicSubstrSolution().testLongestPalindrome();
+        HFReverseIntegerSolution().testReverse();
         HFMergeArySolution().testMerge();
         HFNumTreesSolution().testNumTrees();
         HFLongestConsecutiveListSolution().testLongestConsecutive();
