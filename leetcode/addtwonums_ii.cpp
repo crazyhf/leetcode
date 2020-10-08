@@ -12,28 +12,6 @@ using namespace std;
 using namespace leetcode;
 
 
-HFAddTwoNumsSolutionII::ListNode *HFAddTwoNumsSolutionII::allocLinkList(std::vector<int> list)
-{
-    ListNode *head = nullptr, *current = nullptr;
-    for (size_t idx = 0; idx < list.size(); idx++) {
-        if (nullptr == head) {
-            current = head = new ListNode(list[idx]);
-        } else {
-            current = current->next = new ListNode(list[idx]);
-        }
-    }
-    return head;
-}
-
-void HFAddTwoNumsSolutionII::freeLinkList(ListNode *list)
-{
-    while (list) {
-        ListNode *current = list;
-        list = list->next;
-        delete current;
-    }
-}
-
 vector<HFAddTwoNumsSolutionII::TestParam> HFAddTwoNumsSolutionII::testParams()
 {
     vector<TestParam> paramVec;

@@ -23,7 +23,15 @@ namespace leetcode
     class HFSolution
     {
     protected:
+        typedef datastruct::HFListNode<int> ListNode;
+        
+        ListNode *allocLinkList(std::vector<int> list);
+        
+        void freeLinkList(ListNode *list);
+        
         std::string intVec2Str(const std::vector<int> &intVec);
+        
+        std::string intVec2Str(const std::vector<std::vector<int>> &intVec);
         
         void printIntVec(const std::vector<int> &intVec);
     };

@@ -35,8 +35,8 @@ void HFReverseIntegerSolution::testReverse()
         TestParam param = paramVec[idx];
         int result = reverse3(param.x);
         cout << endl << "Input : " << param.x << endl
-        << "Output: " << result << endl
-        << "Expect: " << param.expect << endl;
+             << "Output: " << result << endl
+             << "Expect: " << param.expect << endl;
     }
     
     cout << "===============================================" << endl << endl;

@@ -96,6 +96,8 @@ namespace foundation
         HFNUMBERITEM_FUNC_DECLARE(double, doubleVal);
         HFNUMBERITEM_FUNC_DECLARE(long double, longDoubleVal);
         
+        HFNumberItem();
+        
 #undef HFNUMBERITEM_FUNC_DECLARE
         
         std::string stringVal() const;
@@ -109,7 +111,7 @@ namespace foundation
         T _value;
         
     public:
-        HFDataItem(T value) : _value(value) {}
+        HFDataItem(T value = T()) : _value(value) {}
         
         T &value() { return _value; }
         

@@ -3,6 +3,8 @@ my exercise for leetcode with cpp language
 
 ### 数据结构
 
+- [链表](/datastruct/linklist.hpp "链表") <https://www.programiz.com/dsa/linked-list>
+
 ### 算法
 
 ##### 排序
@@ -31,11 +33,17 @@ my exercise for leetcode with cpp language
 
 - [7. 整数反转](/leetcode/reverseinteger.hpp "整数反转") <https://leetcode-cn.com/problems/reverse-integer>
 
+- [54. 螺旋矩阵](/leetcode/spiralmatrix.hpp "螺旋矩阵") <https://leetcode-cn.com/problems/spiral-matrix>
+
 - [88. 合并两个有序数组](/leetcode/mergeary.hpp "合并两个有序数组") <https://leetcode-cn.com/problems/merge-sorted-array>
+
+- [92. 反转链表 II](/leetcode/reverselinkedlist_ii.hpp "反转链表 II") <https://leetcode-cn.com/problems/reverse-linked-list-ii>
 
 - [96. 不同的二叉搜索树](/leetcode/numtrees.hpp "不同的二叉搜索树") <https://leetcode-cn.com/problems/unique-binary-search-trees>
 
 - [128. 最长连续序列](/leetcode/longestconsecutivelist.hpp "最长连续序列") <https://leetcode-cn.com/problems/longest-consecutive-sequence>
+
+- [206. 反转链表](/leetcode/reverselinkedlist.hpp "反转链表") <https://leetcode-cn.com/problems/reverse-linked-list>
 
 - [349. 两个数组的交集](/leetcode/intersectary.hpp "两个数组的交集") <https://leetcode-cn.com/problems/intersection-of-two-arrays>
 

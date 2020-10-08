@@ -118,20 +118,20 @@ namespace foundation
     T HFNumberItem::value() const
     {
         switch (_type) {
-            case BOOL: return _number.boolVal;
-            case CHAR: return _number.charVal;
-            case UCHAR: return _number.uCharVal;
-            case SHORT: return _number.shortVal;
-            case USHORT: return _number.uShortVal;
-            case INT: return _number.intVal;
-            case UINT: return _number.uIntVal;
-            case LONG: return _number.longVal;
-            case ULONG: return _number.uLongVal;
-            case LONGLONG: return _number.longLongVal;
-            case ULONGLONG: return _number.uLongLongVal;
-            case FLOAT: return _number.floatVal;
-            case DOUBLE: return _number.doubleVal;
-            case LONGDOUBLE: return _number.longDoubleVal;
+            case BOOL: return (T)_number.boolVal;
+            case CHAR: return (T)_number.charVal;
+            case UCHAR: return (T)_number.uCharVal;
+            case SHORT: return (T)_number.shortVal;
+            case USHORT: return (T)_number.uShortVal;
+            case INT: return (T)_number.intVal;
+            case UINT: return (T)_number.uIntVal;
+            case LONG: return (T)_number.longVal;
+            case ULONG: return (T)_number.uLongVal;
+            case LONGLONG: return (T)_number.longLongVal;
+            case ULONGLONG: return (T)_number.uLongLongVal;
+            case FLOAT: return (T)_number.floatVal;
+            case DOUBLE: return (T)_number.doubleVal;
+            case LONGDOUBLE: return (T)_number.longDoubleVal;
             default: return 0;
         }
     }
@@ -157,6 +157,10 @@ namespace foundation
     HFNUMBERITEM_FUNC_DEFINE(float, floatVal);
     HFNUMBERITEM_FUNC_DEFINE(double, doubleVal);
     HFNUMBERITEM_FUNC_DEFINE(long double, longDoubleVal);
+    
+    HFNumberItem::HFNumberItem()
+                 : _type(HFNumberTypeObj<signed long long>::type()),
+                   _number({.longLongVal = 0}) {}
     
 #undef HFNUMBERITEM_FUNC_DEFINE
     

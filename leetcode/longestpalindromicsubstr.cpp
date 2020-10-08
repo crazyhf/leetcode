@@ -32,8 +32,8 @@ void HFLongestPalindromicSubstrSolution::testLongestPalindrome()
         TestParam param = paramVec[idx];
         string result = longestPalindrome(param.s);
         cout << endl << "Input : " << param.s << endl
-        << "Output: " << result << endl
-        << "Expect: " << param.expect << endl;
+             << "Output: " << result << endl
+             << "Expect: " << param.expect << endl;
     }
     
     cout << "===============================================" << endl << endl;

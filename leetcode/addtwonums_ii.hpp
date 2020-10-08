@@ -11,8 +11,6 @@
 
 #include "solution.hpp"
 
-#include "linklist.hpp"
-
 
 namespace leetcode
 {
@@ -35,12 +33,6 @@ namespace leetcode
     class HFAddTwoNumsSolutionII : HFSolution
     {
     private:
-        typedef datastruct::HFListNode<int> ListNode;
-        
-        ListNode *allocLinkList(std::vector<int> list);
-        
-        void freeLinkList(ListNode *list);
-        
         struct TestParam {
             ListNode *l1;
             ListNode *l2;

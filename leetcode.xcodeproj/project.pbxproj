@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8110DA0E253046080028C242 /* reverselinkedlist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8110DA0C253046080028C242 /* reverselinkedlist.cpp */; };
+		8110DA1225304A220028C242 /* reverselinkedlist_ii.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8110DA1025304A220028C242 /* reverselinkedlist_ii.cpp */; };
+		81DF07CA252EC29F00ECB710 /* datastructtest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81DF07C8252EC29F00ECB710 /* datastructtest.cpp */; };
+		81DF081725300E7000ECB710 /* spiralmatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81DF081525300E7000ECB710 /* spiralmatrix.cpp */; };
 		81EBF4F9231C07EC00ABA86C /* reverseinteger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81EBF4F7231C07EC00ABA86C /* reverseinteger.cpp */; };
 		81F262992317824F002A6549 /* longestsubstrnorepeatchar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81F262972317824F002A6549 /* longestsubstrnorepeatchar.cpp */; };
 		81F2629C2317A029002A6549 /* midoftwosortedary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81F2629A2317A029002A6549 /* midoftwosortedary.cpp */; };
@@ -46,6 +50,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8110DA0C253046080028C242 /* reverselinkedlist.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = reverselinkedlist.cpp; sourceTree = "<group>"; };
+		8110DA0D253046080028C242 /* reverselinkedlist.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = reverselinkedlist.hpp; sourceTree = "<group>"; };
+		8110DA1025304A220028C242 /* reverselinkedlist_ii.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = reverselinkedlist_ii.cpp; sourceTree = "<group>"; };
+		8110DA1125304A220028C242 /* reverselinkedlist_ii.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = reverselinkedlist_ii.hpp; sourceTree = "<group>"; };
+		81DF07C8252EC29F00ECB710 /* datastructtest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = datastructtest.cpp; sourceTree = "<group>"; };
+		81DF07C9252EC29F00ECB710 /* datastructtest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = datastructtest.hpp; sourceTree = "<group>"; };
+		81DF081525300E7000ECB710 /* spiralmatrix.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = spiralmatrix.cpp; sourceTree = "<group>"; };
+		81DF081625300E7000ECB710 /* spiralmatrix.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = spiralmatrix.hpp; sourceTree = "<group>"; };
 		81EBF4F7231C07EC00ABA86C /* reverseinteger.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = reverseinteger.cpp; sourceTree = "<group>"; };
 		81EBF4F8231C07EC00ABA86C /* reverseinteger.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = reverseinteger.hpp; sourceTree = "<group>"; };
 		81F262972317824F002A6549 /* longestsubstrnorepeatchar.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = longestsubstrnorepeatchar.cpp; sourceTree = "<group>"; };
@@ -108,6 +120,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		81DF081025300B8500ECB710 /* lcof */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = lcof;
+			sourceTree = "<group>";
+		};
 		D24743E122F1327B0084E611 /* algorithm */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +145,8 @@
 				D255E75C230BCFE700FAB975 /* linklist.hpp */,
 				D255E75E230BD00A00FAB975 /* datastruct.cpp */,
 				D255E75F230BD00A00FAB975 /* datastruct.hpp */,
+				81DF07C8252EC29F00ECB710 /* datastructtest.cpp */,
+				81DF07C9252EC29F00ECB710 /* datastructtest.hpp */,
 			);
 			path = datastruct;
 			sourceTree = "<group>";
@@ -189,6 +210,7 @@
 		D2DDD15722F021A400C18EBF /* leetcode */ = {
 			isa = PBXGroup;
 			children = (
+				81DF081025300B8500ECB710 /* lcof */,
 				D255E754230BA5D400FAB975 /* README.md */,
 				D2DDD15822F021A400C18EBF /* main.mm */,
 				D2DDD16222F02AF400C18EBF /* solution.cpp */,
@@ -205,12 +227,18 @@
 				81F2629E2317ADB9002A6549 /* longestpalindromicsubstr.hpp */,
 				81EBF4F7231C07EC00ABA86C /* reverseinteger.cpp */,
 				81EBF4F8231C07EC00ABA86C /* reverseinteger.hpp */,
+				81DF081525300E7000ECB710 /* spiralmatrix.cpp */,
+				81DF081625300E7000ECB710 /* spiralmatrix.hpp */,
 				D2DDD16822F033A200C18EBF /* mergeary.cpp */,
 				D2DDD16922F033A200C18EBF /* mergeary.hpp */,
+				8110DA1025304A220028C242 /* reverselinkedlist_ii.cpp */,
+				8110DA1125304A220028C242 /* reverselinkedlist_ii.hpp */,
 				D2DDD16522F031F500C18EBF /* numtrees.cpp */,
 				D2DDD16622F031F500C18EBF /* numtrees.hpp */,
 				D20568BF2305313600B0416F /* longestconsecutivelist.cpp */,
 				D20568C02305313600B0416F /* longestconsecutivelist.hpp */,
+				8110DA0C253046080028C242 /* reverselinkedlist.cpp */,
+				8110DA0D253046080028C242 /* reverselinkedlist.hpp */,
 				D2DDD16B22F034E300C18EBF /* intersectary.cpp */,
 				D2DDD16C22F034E300C18EBF /* intersectary.hpp */,
 				D255E76A230BFA3200FAB975 /* addtwonums_ii.cpp */,
@@ -259,6 +287,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = D2DDD14C22F021A400C18EBF;
 			productRefGroup = D2DDD15622F021A400C18EBF /* Products */;
@@ -276,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2DDD16722F031F500C18EBF /* numtrees.cpp in Sources */,
+				81DF07CA252EC29F00ECB710 /* datastructtest.cpp in Sources */,
 				D2DDD16A22F033A200C18EBF /* mergeary.cpp in Sources */,
 				D28341A1230A9E4400A74593 /* sortalgorithmtest.cpp in Sources */,
 				D255E75A230BCFDB00FAB975 /* sqlist.cpp in Sources */,
@@ -284,14 +314,17 @@
 				D255E763230BDA7700FAB975 /* insertsort.cpp in Sources */,
 				D24743ED22F133700084E611 /* bubblesort.cpp in Sources */,
 				D255E75D230BCFE700FAB975 /* linklist.cpp in Sources */,
+				8110DA0E253046080028C242 /* reverselinkedlist.cpp in Sources */,
 				D20568C12305313600B0416F /* longestconsecutivelist.cpp in Sources */,
 				D255E757230BCA8400FAB975 /* addtwonums.cpp in Sources */,
 				81F2629F2317ADB9002A6549 /* longestpalindromicsubstr.cpp in Sources */,
 				D28341A4230AA1E700A74593 /* convertutils.cpp in Sources */,
 				D2DDD16122F0229500C18EBF /* towsum.cpp in Sources */,
 				D255E753230B99A300FAB975 /* sortalgorithm.cpp in Sources */,
+				8110DA1225304A220028C242 /* reverselinkedlist_ii.cpp in Sources */,
 				D255E76C230BFA3200FAB975 /* addtwonums_ii.cpp in Sources */,
 				81F262992317824F002A6549 /* longestsubstrnorepeatchar.cpp in Sources */,
+				81DF081725300E7000ECB710 /* spiralmatrix.cpp in Sources */,
 				D2DDD16422F02AF400C18EBF /* solution.cpp in Sources */,
 				D255E760230BD00A00FAB975 /* datastruct.cpp in Sources */,
 				D2DDD16D22F034E300C18EBF /* intersectary.cpp in Sources */,
